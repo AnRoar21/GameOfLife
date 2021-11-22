@@ -198,7 +198,7 @@ public class ForestFire3D : MonoBehaviour
 
                 if (alightNeighbourCells > 0)
                 {
-                    forestFireCells[xCount, yCount].BirdFly();
+                    forestFireCells[xCount, yCount].BirdFly(); // if tree is on fire or near neighbouring tree
 
                 }
 
@@ -326,7 +326,7 @@ public class ForestFire3D : MonoBehaviour
                 if (forestFireCells[xCount, yCount].cellState == ForestFireCell.State.Alight)
                 {
                     forestFireCells[xCount, yCount].SetAlight();
-                    forestFireCells[xCount, yCount].BirdFly();
+                    forestFireCells[xCount, yCount].BirdFly(); // if tree is set alight, the bird will fly
 
                 }
                 else if (forestFireCells[xCount, yCount].cellState == ForestFireCell.State.Rock)

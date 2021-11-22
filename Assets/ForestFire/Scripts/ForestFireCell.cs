@@ -38,8 +38,8 @@ public class ForestFireCell : MonoBehaviour
     public GameObject currentFire; // if the cell is on fire, the reference to the fire vfx is stored here
     public GameObject playerCamera; // reference to player camera
     public float fireVFXDistance; // float to set the maximum distance a fire vfx will be rendered at. this is used to improve rendering performance. 
-    public bool treeHasBird;//generates a bird for the tree
-    public bool birdFlown; //bird is on tree
+    public bool treeHasBird; // generates a bird for the tree
+    public bool birdFlown; // bird is on tree
 
     private VisualEffect _fireVisualEffect; // reference to the fire vfx on the current fire object.
 
@@ -50,11 +50,11 @@ public class ForestFireCell : MonoBehaviour
     }
     public void Start()
     {
-        int randomNumber = UnityEngine.Random.Range(1, 11);
+        int randomNumber = UnityEngine.Random.Range(1, 11); 
         if (randomNumber == 10)
         {
-            treeHasBird = true;
-            birdObject.SetActive(true);
+            treeHasBird = true; // generates random bird in tree
+            birdObject.SetActive(true); // turns on bird object
         }
     }
     // reset anything that was turned on by a different cell 
@@ -181,13 +181,13 @@ public class ForestFireCell : MonoBehaviour
         cellState = State.Burnt;
         groundMeshRenderer.material = groundMaterialBurnt;
     }
-    public void BirdFly()
+    public void BirdFly() // bird will fly away
     {
        
-        if (birdFlown == false && treeHasBird == true)
+        if (birdFlown == false && treeHasBird == true) // if tree has a bird
         {
         Debug.Log("bird has flown away");
-            birdFlown = true;
+            birdFlown = true; // stops
         }
     }
 }
