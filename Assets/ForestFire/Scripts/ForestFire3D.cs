@@ -195,6 +195,15 @@ public class ForestFire3D : MonoBehaviour
                 {
                     forestFireCellsNextGenStates[xCount, yCount] = forestFireCells[xCount, yCount].cellState;
                 }
+
+                if (alightNeighbourCells > 0)
+                {
+                    forestFireCells[xCount, yCount].BirdFly();
+
+                }
+
+                        
+                       
             }
         }
 
@@ -317,6 +326,8 @@ public class ForestFire3D : MonoBehaviour
                 if (forestFireCells[xCount, yCount].cellState == ForestFireCell.State.Alight)
                 {
                     forestFireCells[xCount, yCount].SetAlight();
+                    forestFireCells[xCount, yCount].BirdFly();
+
                 }
                 else if (forestFireCells[xCount, yCount].cellState == ForestFireCell.State.Rock)
                 {
