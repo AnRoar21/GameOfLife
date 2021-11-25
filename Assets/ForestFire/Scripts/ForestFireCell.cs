@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
+using UnityEngine.UI;
 
 // class that represents a single cell in the cellular automaton
 // contains data about the cell and methods to change its visual appearance
@@ -186,6 +187,7 @@ public class ForestFireCell : MonoBehaviour
        
         if (birdFlown == false && treeHasBird == true) // if tree has a bird
         {
+            birdObject.GetComponent<Birds>().flying = true;
         Debug.Log("bird has flown away");
             birdFlown = true; // stops
         }
