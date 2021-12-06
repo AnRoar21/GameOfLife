@@ -1,5 +1,5 @@
-# GameOfLife Broken Version
+# Forest Fire
 
-This is released to the students of VR MSC as broken code example. Any one using this not in the university will be disappionted as its incomplete.
+This a coding assignment. I've corrected the broken code and added the additional features of crows in the trees who fly away as the trees catch light. There is an additional sound effect of the them cawing as they do so.
 
 
