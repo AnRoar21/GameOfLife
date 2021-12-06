@@ -20,7 +20,7 @@ public class Birds : MonoBehaviour
             float step = speed * Time.deltaTime; // calculate distance to move
             transform.position = Vector3.MoveTowards(transform.position, destination, step);
             transform.parent = null;
-            destination += new Vector3(UnityEngine.Random.Range(-1, +1),0, UnityEngine.Random.Range(-1, +1));
+            destination += new Vector3(UnityEngine.Random.Range(-1, +1),0, UnityEngine.Random.Range(-1, +1)); //birds fly off to destination
         }
     }
 }

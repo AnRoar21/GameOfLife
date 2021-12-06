@@ -8,7 +8,7 @@ public class PlayOnCollision : MonoBehaviour
     {
         if (other.tag == "Crow")
         {
-            other.gameObject.GetComponent<AudioSource>().Play();
+            other.gameObject.GetComponent<AudioSource>().Play(); //audio plays
             Debug.Log("crow crows");
         }
     }
