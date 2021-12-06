@@ -9,7 +9,7 @@ public class Birds : MonoBehaviour
     public float speed;
     void Start()
     {
-        destination = new Vector3(0, 100, 0);   
+        destination = new Vector3(0, 100, 0);
     }
 
     // Update is called once per frame

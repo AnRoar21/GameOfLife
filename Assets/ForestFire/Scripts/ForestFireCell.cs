@@ -51,7 +51,7 @@ public class ForestFireCell : MonoBehaviour
     }
     public void Start()
     {
-        int randomNumber = UnityEngine.Random.Range(1, 11); 
+        int randomNumber = UnityEngine.Random.Range(1, 11);
         if (randomNumber == 10)
         {
             treeHasBird = true; // generates random bird in tree
